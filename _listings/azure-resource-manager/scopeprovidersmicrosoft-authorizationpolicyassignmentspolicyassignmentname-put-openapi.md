@@ -3,8 +3,10 @@ swagger: "2.0"
 x-collection-name: Azure Resource Manager
 x-complete: 0
 info:
-  title: Azure Resource Manager API Policy Assignments Delete
-  description: Deletes a policy assignment.
+  title: Azure Resource Manager API Creates a policy assignment.
+  description: Policy assignments are inherited by child resources. For example, when
+    you apply a policy to a resource group that policy is assigned to all resources
+    in the group.
   version: 1.0.0
 host: management.azure.com
 basePath: /
@@ -27,6 +29,32 @@ paths:
       - in: path
         name: policyAssignmentName
         description: The name of the policy assignment to delete
+      - in: path
+        name: scope
+        description: The scope of the policy assignment
+      responses:
+        200:
+          description: OK
+      tags:
+      - Policy Assignments
+    put:
+      summary: Creates a policy assignment.
+      description: Policy assignments are inherited by child resources. For example,
+        when you apply a policy to a resource group that policy is assigned to all
+        resources in the group.
+      operationId: PolicyAssignments_Create
+      x-api-path-slug: scopeprovidersmicrosoft-authorizationpolicyassignmentspolicyassignmentname-put
+      parameters:
+      - in: query
+        name: No Name
+      - in: body
+        name: parameters
+        description: Parameters for the policy assignment
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: policyAssignmentName
+        description: The name of the policy assignment
       - in: path
         name: scope
         description: The scope of the policy assignment

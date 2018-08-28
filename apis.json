@@ -1,0 +1,33 @@
+{
+	"name": "Streadata.io API Gallery - Policy Assignments",
+	"description": "This is a repository of policy assignments APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/policy-assignments.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-28",
+	"url": "http://policy-assignments.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "Azure Resource Manager",
+			"x-api-slug": "azure-resource-manager",
+			"description": "Azure Resource Manager enables you to deploy and manage the infrastructure for your Azure solutions. You organize related resources in resource groups, and deploy your resources with JSON templates. For an introduction to deploying and managing resources with Resource Manager, see Azure Resource Manager overview.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-resource-manager.png",
+			"humanURL": "https://docs.microsoft.com/en-us/rest/api/resources/",
+			"baseURL": "://management.azure.com//",
+			"tags": "Policy Assignments",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/policy-assignments/master/_listings/azure-resource-manager/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Policy Assignments",
+	"include": [
+		{
+			"name": "Azure Resource Manager",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/policy-assignments/master/_listings/azure-resource-manager/apis.yaml"
+		}
+	]
+}

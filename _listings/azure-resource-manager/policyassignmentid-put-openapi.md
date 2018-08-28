@@ -3,8 +3,10 @@ swagger: "2.0"
 x-collection-name: Azure Resource Manager
 x-complete: 0
 info:
-  title: Azure Resource Manager API Gets a policy assignment by ID.
-  description: When providing a scope for the assigment, use '/subscriptions/{subscription-id}/'
+  title: Azure Resource Manager API Creates a policy assignment by ID.
+  description: Policy assignments are inherited by child resources. For example, when
+    you apply a policy to a resource group that policy is assigned to all resources
+    in the group. When providing a scope for the assigment, use '/subscriptions/{subscription-id}/'
     for subscriptions, '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}'
     for resource groups, and '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider-namespace}/{resource-type}/{resource-name}'
     for resources.
@@ -173,25 +175,6 @@ paths:
       - in: path
         name: policyAssignmentId
         description: The ID of the policy assignment to create
-      responses:
-        200:
-          description: OK
-      tags:
-      - Policy Assignments
-    get:
-      summary: Gets a policy assignment by ID.
-      description: When providing a scope for the assigment, use '/subscriptions/{subscription-id}/'
-        for subscriptions, '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}'
-        for resource groups, and '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider-namespace}/{resource-type}/{resource-name}'
-        for resources.
-      operationId: PolicyAssignments_GetById
-      x-api-path-slug: policyassignmentid-get
-      parameters:
-      - in: query
-        name: No Name
-      - in: path
-        name: policyAssignmentId
-        description: The ID of the policy assignment to get
       responses:
         200:
           description: OK

@@ -9,8 +9,8 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "8"
 x-alexaRank: "0"
 tags: Policy Assignments
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/policy-assignments/master/_listings/azure-resource-manager/apis.md
 specificationVersion: "0.14"
 apis:
@@ -27,6 +27,19 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/policy-assignments/master/_listings/azure-resource-manager/scopeprovidersmicrosoft-authorizationpolicyassignmentspolicyassignmentname-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/policy-assignments/master/_listings/azure-resource-manager/scopeprovidersmicrosoft-authorizationpolicyassignmentspolicyassignmentname-delete-openapi.md
+- name: SubscriptionClient - Creates a policy assignment.
+  x-api-slug: scopeprovidersmicrosoft-authorizationpolicyassignmentspolicyassignmentname-put
+  description: Policy assignments are inherited by child resources. For example, when
+    you apply a policy to a resource group that policy is assigned to all resources
+    in the group.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-resource-manager.png
+  humanURL: https://docs.microsoft.com/en-us/rest/api/resources/
+  baseURL: ://management.azure.com//
+  tags: Microsoft, Resources, Links, API Service Provider, API Provider, Deployments,
+    Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/policy-assignments/master/_listings/azure-resource-manager/scopeprovidersmicrosoft-authorizationpolicyassignmentspolicyassignmentname-put-openapi.md
 - name: SubscriptionClient - Policy Assignments Get
   x-api-slug: scopeprovidersmicrosoft-authorizationpolicyassignmentspolicyassignmentname-get
   description: Gets a policy assignment.
@@ -82,6 +95,22 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/policy-assignments/master/_listings/azure-resource-manager/policyassignmentid-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/policy-assignments/master/_listings/azure-resource-manager/policyassignmentid-delete-openapi.md
+- name: SubscriptionClient - Creates a policy assignment by ID.
+  x-api-slug: policyassignmentid-put
+  description: Policy assignments are inherited by child resources. For example, when
+    you apply a policy to a resource group that policy is assigned to all resources
+    in the group. When providing a scope for the assigment, use '/subscriptions/{subscription-id}/'
+    for subscriptions, '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}'
+    for resource groups, and '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider-namespace}/{resource-type}/{resource-name}'
+    for resources.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/azure-resource-manager.png
+  humanURL: https://docs.microsoft.com/en-us/rest/api/resources/
+  baseURL: ://management.azure.com//
+  tags: Microsoft, Resources, Links, API Service Provider, API Provider, Deployments,
+    Profiles, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/policy-assignments/master/_listings/azure-resource-manager/policyassignmentid-put-openapi.md
 - name: SubscriptionClient - Gets a policy assignment by ID.
   x-api-slug: policyassignmentid-get
   description: When providing a scope for the assigment, use '/subscriptions/{subscription-id}/'
